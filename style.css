@@ -1,0 +1,335 @@
+@import './reset.css';
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  background-color: #fdfdfb;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerhome {
+  max-width: 1132px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerquality {
+  max-width: 967px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.line {
+  border: 1px solid #8b8371;
+  width: 50px;
+}
+
+.header {
+  color: #555248;
+  padding-top: 34px;
+  padding-bottom: 29px;
+}
+.header-row {
+  display: flex;
+  justify-content: space-between;
+}
+.header-logo a {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555248;
+}
+.header-logo img {
+  width: 19.19px;
+  height: 19.21px;
+}
+.header-logo h1 {
+  letter-spacing: 0.14em;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 12px;
+}
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav ul li:not(:last-child) {
+  margin-right: 64px;
+}
+.header-nav ul li a {
+  color: #555248;
+  transition: 0.2s ease;
+}
+.header-nav ul li a:hover {
+  color: #d4b098;
+}
+.header-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 10px;
+}
+.header-icons a {
+  margin-right: 23px;
+}
+.header-icons-like {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: #e6c8b4;
+  border-radius: 7px;
+  left: 53px;
+  bottom: 12px;
+  font-size: 8px;
+  text-align: center;
+  padding-top: 2px;
+  color: #1b1a17;
+}
+
+.collection {
+  position: relative;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.collection-container {
+  width: 340px;
+  padding-left: 65px;
+}
+.collection-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection-content-collect {
+  font-family: "Playfair Display";
+  font-size: 45px;
+  padding-bottom: 39px;
+}
+.collection-content-text {
+  line-height: 23px;
+  font-weight: 300;
+  padding-bottom: 64px;
+}
+.collection-btn {
+  width: 205px;
+  height: 64px;
+  background-color: #444240;
+  text-align: center;
+  line-height: 64px;
+  transition: 0.3s ease;
+}
+.collection-btn:hover {
+  background-color: #8b8371;
+}
+.collection-btn p {
+  color: #ffffff;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+.collection-btn p:hover {
+  color: #444240;
+}
+.collection-heading {
+  width: 408px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.collection-heading h3 {
+  font-family: "Playfair Display";
+  font-size: 45px;
+}
+.collection-watch {
+  max-width: 669px;
+  display: flex;
+  justify-content: space-between;
+}
+.collection-watch img {
+  max-width: 100%;
+}
+.collection-watch-price {
+  width: 138px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 150px;
+  left: 530px;
+}
+.collection-watch-options {
+  width: 187px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 650px;
+  right: 15px;
+}
+.collection-bg-img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.collection-bg-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.popular {
+  padding-top: 74px;
+}
+.popular p {
+  text-align: center;
+  font-family: "Playfair Display";
+  font-size: 32px;
+}
+.popular-lookall {
+  margin-left: 1065px;
+  border-bottom: 1px solid #c4c0b6;
+  height: 26.5px;
+  width: 104px;
+}
+.popular-lookall a {
+  color: #444240;
+  line-height: 18.75px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+.popular-lookall a:hover {
+  color: #c4c0b6;
+}
+
+.cards {
+  margin-bottom: 98px;
+  background-color: #ffffff;
+}
+.cards-content {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.cards-card {
+  margin-top: 27px;
+  padding-right: 20px;
+  color: #1b1a17;
+  font-family: "Playfair Display", sans-serif;
+  background: url("./images/watch_back_1.jpg");
+}
+.cards-card-header {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+.cards-card-price {
+  width: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.cards-card-price-text {
+  font-family: "Prata", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #1b1a17;
+}
+.cards-card-watch {
+  background: url("./images/2.png");
+  background-size: contain;
+}
+.cards-card-more {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 140px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 37px;
+}
+.cards-card-more-line {
+  width: 30px;
+  border: 1px solid #8b8371;
+}
+.cards-card-more a {
+  font-size: 16px;
+  color: #1b1a17;
+  transition: 0.2s ease;
+}
+.cards-card-more a:hover {
+  color: #c4c0b6;
+}
+
+.quality {
+  height: 519px;
+  margin-left: 0;
+  margin-right: 0;
+  background: url("./images/Component2.jpg") center no-repeat;
+}
+.quality-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quality-content-slider {
+  padding-top: 52px;
+}
+.quality-content-slider-buttonblock {
+  margin-left: 375px;
+  padding-top: 20px;
+  width: 63px;
+  height: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.quality-content-slider-buttonblock p {
+  font-family: "Prata", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #1b1a17;
+}
+.quality-content-text-head {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  padding-bottom: 38px;
+}
+.quality-content-text-container {
+  width: 376px;
+  padding-bottom: 45px;
+}
+.quality-content-text-container p {
+  color: #444240;
+  font-size: 16px;
+  line-height: 150%;
+}
+.quality-btn {
+  width: 205px;
+  height: 64px;
+  background: #d4b098;
+}
+.quality-btn p {
+  line-height: 64px;
+  text-align: center;
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,353 @@
+@import './reset.css';
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  background-color: #fdfdfb;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.containerhome {
+  max-width: 1132px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.containerquality {
+  max-width: 967px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.line {
+  border: 1px solid #8b8371;
+  width: 50px;
+}
+
+.header {
+  color: #555248;
+  padding-top: 34px;
+  padding-bottom: 29px;
+  &-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-logo {
+    a {
+      padding-top: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #555248;
+    }
+
+    img {
+      width: 19.19px;
+      height: 19.21px;
+    }
+    h1 {
+      letter-spacing: 0.14em;
+      font-family: 'Playfair Display';
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+  &-nav {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li:not(:last-child) {
+        margin-right: 64px;
+      }
+      li {
+        a {
+          color: #555248;
+          transition: 0.2s ease;
+          &:hover {
+            color: #d4b098;
+          }
+        }
+      }
+    }
+  }
+  &-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-top: 10px;
+
+    a {
+      margin-right: 23px;
+    }
+    &-like {
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      background-color: #e6c8b4;
+      border-radius: 7px;
+      left: 53px;
+      bottom: 12px;
+      font-size: 8px;
+      text-align: center;
+      padding-top: 2px;
+      color: #1b1a17;
+    }
+  }
+}
+.collection {
+  // background: url('./images/elipse_main.jpg');
+  position: relative;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+  &-container {
+    width: 340px;
+    padding-left: 65px;
+  }
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-content {
+    &-collect {
+      font-family: 'Playfair Display';
+      font-size: 45px;
+      padding-bottom: 39px;
+    }
+    &-text {
+      line-height: 23px;
+      font-weight: 300;
+      padding-bottom: 64px;
+    }
+  }
+  &-btn {
+    width: 205px;
+    height: 64px;
+    background-color: #444240;
+    text-align: center;
+    line-height: 64px;
+
+    transition: 0.3s ease;
+    &:hover {
+      background-color: #8b8371;
+    }
+
+    p {
+      color: #ffffff;
+      font-weight: 500;
+      text-transform: uppercase;
+      transition: 0.3s ease;
+      &:hover {
+        color: #444240;
+      }
+    }
+  }
+  &-heading {
+    width: 408px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h3 {
+      font-family: 'Playfair Display';
+      font-size: 45px;
+    }
+  }
+  &-watch {
+    max-width: 669px;
+
+    display: flex;
+    justify-content: space-between;
+    img {
+      max-width: 100%;
+    }
+    &-price {
+      width: 138px;
+      height: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 150px;
+      left: 530px;
+    }
+    &-options {
+      width: 187px;
+      height: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 650px;
+      right: 15px;
+    }
+  }
+  &-bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.popular {
+  padding-top: 74px;
+  p {
+    text-align: center;
+    font-family: 'Playfair Display';
+
+    font-size: 32px;
+  }
+  &-lookall {
+    margin-left: 1065px;
+    border-bottom: 1px solid #c4c0b6;
+    height: 26.5px;
+    width: 104px;
+
+    a {
+      color: #444240;
+      line-height: 18.75px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: 0.2s ease;
+      &:hover {
+        color: #c4c0b6;
+      }
+    }
+  }
+}
+.cards {
+  margin-bottom: 98px;
+  background-color: #ffffff;
+  &-content {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &-card {
+    margin-top: 27px;
+
+    padding-right: 20px;
+    color: #1b1a17;
+    font-family: 'Playfair Display', sans-serif;
+    background: url('./images/watch_back_1.jpg');
+
+    &-header {
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+
+      padding-bottom: 10px;
+    }
+    &-price {
+      width: 54px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+
+      &-text {
+        font-family: 'Prata', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: #1b1a17;
+      }
+    }
+    &-watch {
+      background: url('./images/2.png');
+      background-size: contain;
+    }
+    &-more {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 140px;
+      padding-left: 10px;
+      padding-top: 20px;
+      padding-bottom: 37px;
+      &-line {
+        width: 30px;
+        border: 1px solid #8b8371;
+      }
+      a {
+        font-size: 16px;
+        color: #1b1a17;
+        transition: 0.2s ease;
+        &:hover {
+          color: #c4c0b6;
+        }
+      }
+    }
+  }
+}
+.quality {
+  height: 519px;
+  margin-left: 0;
+  margin-right: 0;
+  background: url('./images/Component2.jpg') center no-repeat;
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-slider {
+      padding-top: 52px;
+      &-buttonblock {
+        margin-left: 375px;
+        padding-top: 20px;
+        width: 63px;
+        height: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+          font-family: 'Prata', sans-serif;
+          font-weight: 400;
+          font-size: 12px;
+          color: #1b1a17;
+        }
+      }
+    }
+    &-text {
+      &-head {
+        font-family: 'Playfair Display';
+        font-size: 32px;
+        padding-bottom: 38px;
+      }
+      &-container {
+        width: 376px;
+
+        padding-bottom: 45px;
+        p {
+          color: #444240;
+          font-size: 16px;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+  &-btn {
+    width: 205px;
+    height: 64px;
+    background: #d4b098;
+    p {
+      line-height: 64px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}
